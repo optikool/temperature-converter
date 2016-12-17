@@ -14,8 +14,8 @@ public class Google {
 
     public Google(WebDriver driver) {
         this.driver = driver;
-        baseURL = "https://wwww.google.com/";
-        driver.get(baseURL + "webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google%20temperature%20converter");
+        baseURL = "https://www.google.com/#q=google+temperature+converter";
+        driver.get(baseURL);
         System.out.println(driver.getTitle());
 
         if (!driver.getTitle().equals("Google")){
