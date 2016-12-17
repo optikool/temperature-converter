@@ -4,13 +4,15 @@ import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
 
+import static org.junit.Assert.fail;
+
 /**
  * Created by optikool on 12/17/2016.
  */
 public class ConversionStepDefs {
     @Given("^I want to  convert (\\d+).(\\d+) degree Fahrenheit to Celsius$")
     public void I_want_to_convert_degree_Fahrenheit_to_Celsius(int arg1, int arg2) {
-
+        fail("It just failed");
     }
 
     @When("^I input the value of Fahrenheit as (\\d+).(\\d+) in text field$")
