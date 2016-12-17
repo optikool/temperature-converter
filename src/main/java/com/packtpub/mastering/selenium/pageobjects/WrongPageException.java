@@ -1,3 +1,5 @@
+package com.packtpub.mastering.selenium.pageobjects;
+
 /**
  * Created by optikool on 12/17/2016.
  */

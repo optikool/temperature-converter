@@ -1,5 +1,7 @@
 package com.packtpub.mastering.selenium.steps;
 
+import com.packtpub.mastering.selenium.pageobjects.Google;
+import com.packtpub.mastering.selenium.pageobjects.TemperatureConverterPage;
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
@@ -8,8 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 /**
  * Created by optikool on 12/17/2016.
@@ -37,7 +38,7 @@ public class ConversionStepDefs {
     public void It_should_be_converted_to_Celsius_as_degree(int arg1) throws Throwable {
         //assertion
         assertEquals(temperatureConverterPage.actualResult(), temperatureConverterPage.expectedResult());
-        
+
         driver.quit();
     }
 }

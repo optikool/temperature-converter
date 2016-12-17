@@ -1,3 +1,5 @@
+package com.packtpub.mastering.selenium.pageobjects;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
